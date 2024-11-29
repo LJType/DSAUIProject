@@ -1,0 +1,92 @@
+﻿<Window x:Class="modernUIDesign.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:modernUIDesign"
+        mc:Ignorable="d"
+        Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border Background="#6B0504"
+            CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock  Text="LOGO/NAME"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Foreground="#D5A021"
+                        FontSize="22"
+                        Margin="25,0,0,0"/>
+
+            <StackPanel
+                Grid.Row="1">
+                <RadioButton
+                    Content="Home"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="15"
+                    Style="{StaticResource MenuButtons}"/>
+                <RadioButton 
+                    Content="Explore"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="15"
+                    Style="{StaticResource MenuButtons}"/>
+                <RadioButton 
+                    Content="Notifications"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="15"
+                    Style="{StaticResource MenuButtons}"/>
+                <RadioButton 
+                    Content="Messages"
+                    Height="50"
+                    Foreground="White"
+                     FontSize="15"
+                    Style="{StaticResource MenuButtons}"/>
+                
+                <Grid Margin="10,280,10,0"
+                      >
+                    <RadioButton 
+                        Content="Log Out"
+                        Height="30"
+                        Foreground="White"
+                        FontSize="14"
+                        Style="{StaticResource MenuButtons}"/>
+                </Grid>
+                
+
+            </StackPanel>
+
+            <TextBox   Width="250"
+                       Height="50"
+                       VerticalContentAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="5"
+                       Grid.Column="1"
+                       Style="{StaticResource TextBox}"/>
+            <Grid/>
+
+
+
+        </Grid> 
+
+                   
+                   
+    </Border>
+
+    
+</Window>
