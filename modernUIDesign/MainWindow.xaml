@@ -2,6 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:viewModel="clr-namespace:modernUIDesign.MVVM.ViewModel"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:modernUIDesign"
         mc:Ignorable="d"
@@ -11,7 +12,11 @@
         Background="Transparent"
         AllowsTransparency="True">
 
-    <Border Background="#6B0504"
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+    <Border Background="#161D6F"
             CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -27,7 +32,7 @@
             <TextBlock  Text="LOGO/NAME"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Left"
-                        Foreground="#D5A021"
+                        Foreground="#98DED9"
                         FontSize="22"
                         Margin="25,0,0,0"/>
 
@@ -40,7 +45,7 @@
                     FontSize="15"
                     Style="{StaticResource MenuButtons}"/>
                 <RadioButton 
-                    Content="Explore"
+                    Content="Job Posting"
                     Height="50"
                     Foreground="White"
                     FontSize="15"
@@ -52,13 +57,25 @@
                     FontSize="15"
                     Style="{StaticResource MenuButtons}"/>
                 <RadioButton 
+                    Content="Applications"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="15"
+                    Style="{StaticResource MenuButtons}"/>
+                <RadioButton 
                     Content="Messages"
                     Height="50"
                     Foreground="White"
                      FontSize="15"
                     Style="{StaticResource MenuButtons}"/>
+                <RadioButton 
+                    Content="Workspace"
+                    Height="50"
+                    Foreground="White"
+                    FontSize="15"
+                    Style="{StaticResource MenuButtons}"/>
                 
-                <Grid Margin="10,280,10,0"
+                <Grid Margin="10,180,10,0"
                       >
                     <RadioButton 
                         Content="Log Out"
@@ -75,11 +92,16 @@
                        Height="50"
                        VerticalContentAlignment="Center"
                        HorizontalAlignment="Left"
-                       Margin="5"
+                       Margin="10"
                        Grid.Column="1"
                        Style="{StaticResource TextBox}"/>
             <Grid/>
 
+            <ContentControl Grid.Row="250"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}">
+            </ContentControl>
 
 
         </Grid> 
