@@ -67,7 +67,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\ApplicationsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\JobPostingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\MessagesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\NotifView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\WorkspaceView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -83,10 +103,30 @@
   <ItemGroup>
     <Compile Include="Main\ObservableOjects.cs" />
     <Compile Include="Main\RelayCommand.cs" />
+    <Compile Include="MVVM\ViewModel\ApplicationsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\JobPostingViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MessagesViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\NotifViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\WorkspaceViewModel.cs" />
+    <Compile Include="MVVM\View\ApplicationsView.xaml.cs">
+      <DependentUpon>ApplicationsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\JobPostingView.xaml.cs">
+      <DependentUpon>JobPostingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\MessagesView.xaml.cs">
+      <DependentUpon>MessagesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\NotifView.xaml.cs">
+      <DependentUpon>NotifView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\WorkspaceView.xaml.cs">
+      <DependentUpon>WorkspaceView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

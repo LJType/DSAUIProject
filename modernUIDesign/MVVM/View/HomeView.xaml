@@ -5,29 +5,29 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:modernUIDesign.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="700">
+             d:DesignHeight="600" d:DesignWidth="1000">
     <StackPanel>
         <TextBlock Text="Newsfeed"
                    Foreground="White"
-                   FontSize="28"
+                   FontSize="20"
                    HorizontalAlignment="Left"
                    Margin="10,0,0,20"/>
         <StackPanel Orientation="Horizontal">
-            <Border Width="650"
-                    Height="400"
+            <Border Width="950"
+                    Height="550"
                     Margin="10,0,0,0">
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#0B2F9F" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset=".4"/>
+                        <GradientStop Color="#00152b" Offset="0.0"/>
+                        <GradientStop Color="#003266" Offset=".5"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
-                                       Rect="0,0,650,400">
+                                       Rect="0,0,950,550">
                     </RectangleGeometry>
                 </Border.Clip>
             </Border>

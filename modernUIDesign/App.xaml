@@ -15,6 +15,27 @@
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:JobPostingViewModel}">
+                <view:JobPostingView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:NotifViewModel}">
+                <view:NotifView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ApplicationsViewModel}">
+                <view:ApplicationsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:MessagesViewModel}">
+                <view:MessagesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:WorkspaceViewModel}">
+                <view:WorkspaceView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
