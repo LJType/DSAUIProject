@@ -9,7 +9,7 @@
     <StackPanel>
         <TextBlock Text="Newsfeed"
                    Foreground="White"
-                   FontSize="20"
+                   FontSize="25"
                    HorizontalAlignment="Left"
                    Margin="10,0,0,20"/>
         <StackPanel Orientation="Horizontal">
@@ -19,8 +19,8 @@
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#00152b" Offset="0.0"/>
-                        <GradientStop Color="#003266" Offset=".5"/>
+                        <GradientStop Color="#b22222" Offset="0.0"/>
+                        <GradientStop Color="#cb4154" Offset=".5"/>
                     </LinearGradientBrush>
                 </Border.Background>
 

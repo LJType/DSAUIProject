@@ -8,6 +8,11 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="#006946">
     <Grid>
+        <Border Width="500"
+                Height="450"
+                HorizontalAlignment="Left">
+            
+        </Border>
             
     </Grid>
 </UserControl>

@@ -17,7 +17,7 @@
         <viewModel:MainViewModel/>
     </Window.DataContext>
 
-    <Border Background="#001F3F"
+    <Border Background="#800000"
             CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -30,11 +30,11 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <TextBlock  Text="LOGO/NAME"
+            <TextBlock  Text="Ga'sBest"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Left"
-                        Foreground="#98DED9"
-                        FontSize="22"
+                        Foreground="#FFD700"
+                        FontSize="40"
                         Margin="25,0,0,0"/>
 
             <StackPanel
@@ -47,7 +47,7 @@
                     Style="{StaticResource MenuButtons}"
                     IsChecked="True"
                     Command="{Binding HomeViewCommand}"/>
-                
+
                 <RadioButton 
                     Content="Job Posting"
                     Height="70"
@@ -55,7 +55,7 @@
                     FontSize="20"
                     Style="{StaticResource MenuButtons}"
                     Command="{Binding JobPostingCommand}"/>
-                
+
                 <RadioButton 
                     Content="Notifications"
                     Height="70"
@@ -71,7 +71,7 @@
                     FontSize="20"
                     Style="{StaticResource MenuButtons}"
                     Command="{Binding ApplicationsCommand}"/>
-                    
+
                 <RadioButton 
                     Content="Messages"
                     Height="70"
@@ -79,7 +79,7 @@
                      FontSize="20"
                     Style="{StaticResource MenuButtons}"
                     Command="{Binding MessagesCommand}"/>
-                
+
                 <RadioButton 
                     Content="Workspace"
                     Height="70"
@@ -88,8 +88,7 @@
                     Style="{StaticResource MenuButtons}"
                     Command="{Binding WorkspaceCommand}"/>
 
-                <Grid Margin="10,160,10,0"
-                      >
+                <Grid Margin="10,160,10,0">
                     <RadioButton 
                         Content="Log Out"
                         Height="40"
@@ -114,6 +113,13 @@
                             Grid.Column="1"
                             Margin="10"
                             Content="{Binding CurrentView}"/>
+            <Button Grid.Column="1" 
+                    Content="Profile" 
+                    HorizontalAlignment="Left" 
+                    Margin="925,12,0,0" 
+                    VerticalAlignment="Top" 
+                    Height="50" 
+                    Width="50"/>
 
 
         </Grid>
